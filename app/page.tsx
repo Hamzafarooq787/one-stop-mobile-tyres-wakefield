@@ -218,7 +218,7 @@ export default function Home() {
       <section className="py-xl relative z-10" id="about">
         <div className="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
-            <div className="relative rounded-xl overflow-hidden group aspect-[4/3] lg:aspect-auto h-full min-h-[400px]">
+            <div className="relative w-full rounded-xl overflow-hidden group aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px]">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-container/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
               <Visual
                 icon="engineering"
