@@ -74,7 +74,7 @@ export default function ContactPage() {
                   <p className="text-label-sm text-on-surface-variant mb-xs">
                     Email Enquiries
                   </p>
-                  <p className="text-on-surface group-hover/link:text-primary transition-colors truncate max-w-[200px] sm:max-w-none">
+                  <p className="text-on-surface group-hover/link:text-primary transition-colors break-all">
                     onestoptyreswakefield@gmail.com
                   </p>
                 </div>

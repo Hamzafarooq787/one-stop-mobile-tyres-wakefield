@@ -21,11 +21,11 @@ export default function Header() {
             width={1600}
             height={582}
             priority
-            className="h-9 sm:h-11 w-auto"
+            className="h-11 sm:h-12 w-auto"
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-gutter">
+        <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => {
             const active =
               link.href === "/"
@@ -48,7 +48,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="hidden lg:flex flex-col items-end mr-4">
+          <div className="hidden xl:flex flex-col items-end mr-4">
             <span className="text-label-sm font-body text-on-surface-variant uppercase tracking-wider">
               24/7 Emergency
             </span>
@@ -67,14 +67,14 @@ export default function Header() {
             <span>Call Now</span>
           </a>
           <a
-            className="bg-primary-container text-white p-2 rounded-xl glow-primary active:scale-95 transition-all duration-300 flex sm:hidden"
+            className="bg-primary-container text-white p-3 rounded-xl glow-primary active:scale-95 transition-all duration-300 flex items-center justify-center sm:hidden"
             href={site.phoneHref}
             aria-label="Call now"
           >
             <Icon name="call" className="w-5 h-5" />
           </a>
           <button
-            className="md:hidden text-primary"
+            className="lg:hidden text-primary p-2 -m-2"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
           >
@@ -84,7 +84,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="md:hidden flex flex-col gap-1 px-margin-mobile pb-4 bg-surface-container-low/95 backdrop-blur-xl border-b border-on-surface/5">
+        <nav className="lg:hidden flex flex-col gap-1 px-margin-mobile pb-4 bg-surface-container-low/95 backdrop-blur-xl border-b border-on-surface/5">
           {navLinks.map((link) => {
             const active =
               link.href === "/"

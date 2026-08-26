@@ -14,7 +14,7 @@ export default function Footer() {
               alt={site.name}
               width={1600}
               height={582}
-              className="h-9 w-auto"
+              className="h-12 sm:h-14 w-auto"
             />
           </Link>
           <p className="text-on-surface-variant text-sm mt-2 max-w-[20rem]">
