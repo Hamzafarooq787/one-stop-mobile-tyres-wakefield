@@ -1,6 +1,5 @@
 export const site = {
   name: "One Stop Mobile Tyre Wakefield",
-  shortName: "One Stop Tyre",
   phone: "01924 123456",
   phoneHref: "tel:01924123456",
   email: "onestoptyreswakefield@gmail.com",
