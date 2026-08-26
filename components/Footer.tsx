@@ -63,18 +63,18 @@ export default function Footer() {
           <h4 className="font-headline text-on-surface font-semibold">
             Legal
           </h4>
-          <a
+          <Link
             className="text-on-surface-variant hover:text-primary transition-colors"
-            href="#"
+            href="/privacy-policy"
           >
             Privacy Policy
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-on-surface-variant hover:text-primary transition-colors"
-            href="#"
+            href="/terms-of-service"
           >
             Terms of Service
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4">
