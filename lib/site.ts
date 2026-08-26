@@ -4,6 +4,11 @@ export const site = {
   phoneHref: "tel:01924123456",
   email: "onestoptyreswakefield@gmail.com",
   emailHref: "mailto:onestoptyreswakefield@gmail.com",
+  whatsappHref:
+    "https://wa.me/447790714784?text=" +
+    encodeURIComponent(
+      "Hi, I need help with a mobile tyre callout in Wakefield.",
+    ),
 };
 
 export const navLinks = [
