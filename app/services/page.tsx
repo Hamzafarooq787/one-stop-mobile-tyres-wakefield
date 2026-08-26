@@ -15,6 +15,8 @@ export default function ServicesPage() {
           <Visual
             icon="factory"
             label="Modern automotive workshop at night"
+            src="/images/hero-van.webp"
+            priority
             className="absolute inset-0 opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
@@ -38,6 +40,8 @@ export default function ServicesPage() {
               <Visual
                 icon="emergency_share"
                 label="Emergency Fitting"
+                src="/images/service-emergency-fitting.webp"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="absolute inset-0"
               />
               <div className="absolute top-sm left-sm bg-error-container text-on-error px-sm py-xs rounded-full border border-error flex items-center gap-xs text-label-sm">
@@ -74,12 +78,14 @@ export default function ServicesPage() {
             title="Mobile Service"
             desc="Complete workshop capabilities delivered directly to your home or workplace."
             price="From £45.00"
+            img="/images/service-mobile-tyre.webp"
           />
           <ServiceCard
             icon="tire_repair"
             title="Replacement"
             desc="Premium and budget options expertly mounted and balanced."
             price="Quote on Request"
+            img="/images/service-tyre-replacement.webp"
           />
 
           {/* Locking Wheel Nut - wide */}
@@ -88,6 +94,8 @@ export default function ServicesPage() {
               <Visual
                 icon="lock_open"
                 label="Locking Wheel Nut Removal"
+                src="/images/service-locking-wheel-nut.webp"
+                sizes="33vw"
                 className="absolute inset-0"
               />
             </div>
@@ -109,24 +117,28 @@ export default function ServicesPage() {
             title="Puncture Repair"
             desc="BSAU159 approved plug and patch repairs for tread punctures."
             price="From £35.00"
+            img="/images/service-puncture-repair.webp"
           />
           <ServiceCard
             icon="sync_alt"
             title="Tyre Change"
             desc="Seasonal swaps or switching out damaged wheels safely."
             price="From £40.00"
+            img="/images/service-tyre-change.webp"
           />
           <ServiceCard
             icon="handyman"
             title="Tyre Repair"
             desc="Advanced diagnostics and safe sealing of minor leaks and valve issues."
             price="From £30.00"
+            img="/images/service-tyre-repair.webp"
           />
           <ServiceCard
             icon="settings_suggest"
             title="New Installation"
             desc="Precision fitting of fresh rubber with digital balancing."
             price="Quote on Request"
+            img="/images/service-new-installation.webp"
           />
         </div>
       </section>
@@ -156,16 +168,24 @@ function ServiceCard({
   title,
   desc,
   price,
+  img,
 }: {
   icon: string;
   title: string;
   desc: string;
   price: string;
+  img?: string;
 }) {
   return (
     <div className="bg-surface-container rounded-xl overflow-hidden card-hover-border border border-border-subtle group">
       <div className="h-40 w-full relative">
-        <Visual icon={icon} label={title} className="absolute inset-0" />
+        <Visual
+          icon={icon}
+          label={title}
+          src={img}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          className="absolute inset-0"
+        />
       </div>
       <div className="p-md">
         <h3 className="font-headline text-lg text-on-surface mb-xs">

@@ -38,6 +38,8 @@ export default function AboutPage() {
           <Visual
             icon="local_shipping"
             label="Mobile tyre fitting van at night in Wakefield"
+            src="/images/hero-van.webp"
+            priority
             className="absolute inset-0 opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background z-10" />
@@ -132,6 +134,8 @@ export default function AboutPage() {
             <Visual
               icon="engineering"
               label="Professional mobile tyre technician at night"
+              src="/images/technician-fitting.webp"
+              sizes="(min-width: 768px) 50vw, 100vw"
               className="absolute inset-0"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent md:hidden" />

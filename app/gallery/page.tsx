@@ -11,36 +11,42 @@ const items = [
     tag: "Mobile Service Unit",
     title: "24/7 Readiness",
     alt: "Premium mobile tyre fitting van at night in Wakefield",
+    img: "/images/gallery-24-7-readiness.webp",
   },
   {
     icon: "settings_suggest",
     tag: "Premium Fitting",
     title: "Alloy Care",
     alt: "Brand new premium tyre being mounted onto a high-end alloy wheel",
+    img: "/images/gallery-alloy-care.webp",
   },
   {
     icon: "lock_open",
     tag: "Specialized Tools",
     title: "Locking Nut Removal",
     alt: "Specialized locking wheel nut removal tool in action",
+    img: "/images/gallery-locking-nut-removal.webp",
   },
   {
     icon: "new_releases",
     tag: "Fresh Rubber",
     title: "New Tyre Installation",
     alt: "Installation of a brand-new tyre on a vehicle",
+    img: "/images/gallery-new-tyre-installation.webp",
   },
   {
     icon: "search",
     tag: "Diagnostics",
     title: "Precision Inspection",
     alt: "Detailed tyre inspection and repair process",
+    img: "/images/gallery-precision-inspection.webp",
   },
   {
     icon: "build",
     tag: "Emergency Repair",
     title: "Puncture Patching",
     alt: "Close-up of a tyre puncture being repaired with a professional patch",
+    img: "/images/gallery-puncture-patching.webp",
   },
 ];
 
@@ -71,6 +77,8 @@ export default function GalleryPage() {
               <Visual
                 icon={item.icon}
                 label={item.alt}
+                src={item.img}
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-glass-bg backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-md border-t border-border-subtle">

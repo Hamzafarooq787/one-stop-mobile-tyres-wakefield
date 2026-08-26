@@ -99,6 +99,8 @@ export default function ContactPage() {
             <Visual
               icon="location_on"
               label="Wakefield, UK service map"
+              src="/images/coverage-map.webp"
+              sizes="(min-width: 1024px) 42vw, 100vw"
               className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity duration-500"
             />
             <div className="absolute bottom-md left-md right-md bg-surface-container-highest/90 backdrop-blur-md p-sm rounded-lg border border-border-subtle flex items-center justify-between">

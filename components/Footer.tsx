@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import Icon from "@/components/Icon";
@@ -11,7 +12,12 @@ export default function Footer() {
             className="font-headline text-headline-md font-bold text-primary flex items-center gap-2"
             href="/"
           >
-            <Icon name="tire_repair" className="w-6 h-6" />
+            <Image
+              src="/images/logo-icon-only.webp"
+              alt=""
+              width={24}
+              height={24}
+            />
             <span>One Stop</span>
           </Link>
           <p className="text-on-surface-variant text-sm mt-2 max-w-[20rem]">

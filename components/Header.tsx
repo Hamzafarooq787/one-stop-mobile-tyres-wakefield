@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks, site } from "@/lib/site";
@@ -17,9 +18,13 @@ export default function Header() {
           className="font-headline text-headline-md font-bold text-on-surface flex items-center gap-2 group"
           href="/"
         >
-          <Icon
-            name="tire_repair"
-            className="text-primary-container group-hover:rotate-180 transition-transform duration-500 w-7 h-7"
+          <Image
+            src="/images/logo-icon-only.webp"
+            alt=""
+            width={28}
+            height={28}
+            priority
+            className="group-hover:rotate-180 transition-transform duration-500"
           />
           <span className="hidden sm:block">{site.name}</span>
           <span className="sm:hidden">{site.shortName}</span>

@@ -1,14 +1,34 @@
+import Image from "next/image";
 import Icon from "@/components/Icon";
 
 export default function Visual({
   icon,
   label,
+  src,
   className = "",
+  sizes = "100vw",
+  priority = false,
 }: {
   icon: string;
   label: string;
+  src?: string;
   className?: string;
+  sizes?: string;
+  priority?: boolean;
 }) {
+  if (src) {
+    return (
+      <Image
+        src={src}
+        alt={label}
+        fill
+        sizes={sizes}
+        priority={priority}
+        className={`object-cover ${className}`}
+      />
+    );
+  }
+
   return (
     <div
       role="img"

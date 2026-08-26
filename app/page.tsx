@@ -8,41 +8,49 @@ const services = [
     title: "Emergency Fitting",
     desc: "Stuck on the roadside? Our rapid response team will get you back on the road safely and quickly.",
     icon: "emergency_share",
+    img: "/images/service-emergency-fitting.webp",
   },
   {
     title: "Mobile Tyre Service",
     desc: "We bring the full workshop to your driveway or workplace for ultimate convenience.",
     icon: "local_shipping",
+    img: "/images/service-mobile-tyre.webp",
   },
   {
     title: "Tyre Replacement",
     desc: "Premium, mid-range, and budget tyres available for all vehicle makes and models.",
     icon: "tire_repair",
+    img: "/images/service-tyre-replacement.webp",
   },
   {
     title: "Locking Wheel Nut Removal",
     desc: "Lost your key? We use specialized equipment to remove locking nuts without damaging your alloys.",
     icon: "lock_open",
+    img: "/images/service-locking-wheel-nut.webp",
   },
   {
     title: "Puncture Repair",
     desc: "Professional BSA-approved puncture repairs to extend the life of your existing tyres.",
     icon: "build",
+    img: "/images/service-puncture-repair.webp",
   },
   {
     title: "Tyre Change",
     desc: "Seasonal tyre swaps or fitting tyres you've purchased elsewhere.",
     icon: "sync_alt",
+    img: "/images/service-tyre-change.webp",
   },
   {
     title: "Tyre Repair",
     desc: "Comprehensive inspection and repair of minor tyre damage to keep you safe.",
     icon: "handyman",
+    img: "/images/service-tyre-repair.webp",
   },
   {
     title: "New Tyre Installation",
     desc: "Precision fitting, computerized balancing, and new valves included as standard.",
     icon: "settings_suggest",
+    img: "/images/service-new-installation.webp",
   },
 ];
 
@@ -146,6 +154,8 @@ export default function Home() {
           <Visual
             icon="tire_repair"
             label="Wakefield Mobile Tyre Fitting Van at Night"
+            src="/images/hero-van.webp"
+            priority
             className="absolute inset-0 opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
@@ -213,6 +223,8 @@ export default function Home() {
               <Visual
                 icon="engineering"
                 label="Professional Mobile Tyre Technician Working"
+                src="/images/technician-fitting.webp"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="absolute inset-0 rounded-xl transform group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-6 left-6 glass-panel p-4 rounded-xl z-20 flex items-center gap-4">
@@ -297,6 +309,8 @@ export default function Home() {
                   <Visual
                     icon={s.icon}
                     label={s.title}
+                    src={s.img}
+                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
                     className="absolute inset-0 transform group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
@@ -431,6 +445,8 @@ export default function Home() {
               <Visual
                 icon="map"
                 label="Wakefield Coverage Area Map"
+                src="/images/coverage-map.webp"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="absolute inset-0 rounded-xl"
               />
             </div>
@@ -458,6 +474,8 @@ export default function Home() {
                 <Visual
                   icon={s.icon}
                   label={s.title}
+                  src={s.img}
+                  sizes="(min-width: 768px) 33vw, 50vw"
                   className="absolute inset-0 hover:scale-105 transition-transform duration-500"
                 />
               </div>

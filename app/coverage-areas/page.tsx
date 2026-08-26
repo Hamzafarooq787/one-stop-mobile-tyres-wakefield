@@ -15,6 +15,8 @@ export default function CoverageAreasPage() {
           <Visual
             icon="map"
             label="Wakefield coverage map"
+            src="/images/coverage-map.webp"
+            priority
             className="absolute inset-0 opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
