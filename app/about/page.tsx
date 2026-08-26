@@ -1,10 +1,14 @@
-import type { Metadata } from "next";
 import Visual from "@/components/Visual";
 import Icon from "@/components/Icon";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us | One Stop Mobile Tyre Wakefield",
-};
+export const metadata = pageMetadata({
+  title: "About Us | 24/7 Mobile Tyre Fitting in Wakefield",
+  description:
+    "Meet One Stop Mobile Tyre Wakefield: 15+ years' experience, 10,000+ tyres fitted, and a 24/7 mobile service built for speed, safety and fair pricing.",
+  path: "/about",
+});
 
 const values = [
   {
@@ -32,6 +36,7 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "About", href: "/about" }]} />
       {/* Hero */}
       <section className="relative py-xl px-margin-mobile md:px-margin-desktop min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

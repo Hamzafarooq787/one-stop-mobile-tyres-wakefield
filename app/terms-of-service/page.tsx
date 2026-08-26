@@ -1,13 +1,19 @@
-import type { Metadata } from "next";
 import { site } from "@/lib/site";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Terms of Service | One Stop Mobile Tyre Wakefield",
-};
+  description:
+    "The terms and conditions that apply when you book a mobile tyre fitting callout with One Stop Mobile Tyre Wakefield.",
+  path: "/terms-of-service",
+});
 
 export default function TermsOfServicePage() {
   return (
-    <main className="pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+    <>
+      <Breadcrumbs items={[{ label: "Terms of Service", href: "/terms-of-service" }]} />
+      <main className="pt-2 pb-xl px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
       <h1 className="font-headline text-headline-xl text-on-surface mb-sm">
         Terms of Service
       </h1>
@@ -140,5 +146,6 @@ export default function TermsOfServicePage() {
         </section>
       </div>
     </main>
+    </>
   );
 }

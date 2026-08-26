@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
 import Visual from "@/components/Visual";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Gallery | One Stop Mobile Tyre Wakefield",
-};
+  description:
+    "See our mobile tyre fitting vans, technicians and completed jobs in action across Wakefield - real photos from real 24/7 roadside callouts.",
+  path: "/gallery",
+});
 
 const items = [
   {
@@ -52,7 +56,9 @@ const items = [
 
 export default function GalleryPage() {
   return (
-    <main className="pt-8 pb-xl min-h-screen">
+    <>
+      <Breadcrumbs items={[{ label: "Gallery", href: "/gallery" }]} />
+      <main className="pt-2 pb-xl min-h-screen">
       <header className="relative px-margin-mobile md:px-margin-desktop py-xl mb-xl text-center">
         <div className="absolute inset-0 bg-gradient-to-b from-surface-container-highest to-background opacity-50 z-0" />
         <div className="relative z-10 max-w-4xl mx-auto">
@@ -94,5 +100,6 @@ export default function GalleryPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

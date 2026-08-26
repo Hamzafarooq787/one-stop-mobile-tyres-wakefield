@@ -1,13 +1,19 @@
-import type { Metadata } from "next";
 import { site } from "@/lib/site";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Privacy Policy | One Stop Mobile Tyre Wakefield",
-};
+  description:
+    "How One Stop Mobile Tyre Wakefield collects, uses and protects your personal information when you book or enquire about our services.",
+  path: "/privacy-policy",
+});
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+    <>
+      <Breadcrumbs items={[{ label: "Privacy Policy", href: "/privacy-policy" }]} />
+      <main className="pt-2 pb-xl px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
       <h1 className="font-headline text-headline-xl text-on-surface mb-sm">
         Privacy Policy
       </h1>
@@ -153,5 +159,6 @@ export default function PrivacyPolicyPage() {
         </section>
       </div>
     </main>
+    </>
   );
 }
