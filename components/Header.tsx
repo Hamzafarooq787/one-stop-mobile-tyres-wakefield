@@ -14,20 +14,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface-container-low/80 backdrop-blur-xl border-b border-on-surface/5 shadow-[0_10px_30px_-15px_rgba(255,107,26,0.15)] transition-all duration-300">
       <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto h-[72px]">
-        <Link
-          className="font-headline text-headline-md font-bold text-on-surface flex items-center gap-2 group"
-          href="/"
-        >
+        <Link className="flex items-center shrink-0" href="/">
           <Image
-            src="/images/logo-icon-only.webp"
-            alt=""
-            width={28}
-            height={28}
+            src="/images/logo-full-dark.webp"
+            alt={site.name}
+            width={1600}
+            height={582}
             priority
-            className="group-hover:rotate-180 transition-transform duration-500"
+            className="h-9 sm:h-11 w-auto"
           />
-          <span className="hidden sm:block">{site.name}</span>
-          <span className="sm:hidden">{site.shortName}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-gutter">

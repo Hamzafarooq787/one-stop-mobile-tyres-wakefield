@@ -8,17 +8,14 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest border-t border-on-surface/5 py-xl">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
         <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
-          <Link
-            className="font-headline text-headline-md font-bold text-primary flex items-center gap-2"
-            href="/"
-          >
+          <Link className="flex items-center" href="/">
             <Image
-              src="/images/logo-icon-only.webp"
-              alt=""
-              width={24}
-              height={24}
+              src="/images/logo-full-dark.webp"
+              alt={site.name}
+              width={1600}
+              height={582}
+              className="h-9 w-auto"
             />
-            <span>One Stop</span>
           </Link>
           <p className="text-on-surface-variant text-sm mt-2 max-w-[20rem]">
             Premium mobile tyre fitting service operating 24/7 across
