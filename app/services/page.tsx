@@ -1,15 +1,20 @@
-import type { Metadata } from "next";
 import Visual from "@/components/Visual";
 import Icon from "@/components/Icon";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services | One Stop Mobile Tyre Wakefield",
-};
+export const metadata = pageMetadata({
+  title: "Mobile Tyre Fitting Services | One Stop Wakefield",
+  description:
+    "Emergency tyre fitting, puncture repair, locking wheel nut removal and new tyre installation - all mobile, all across Wakefield, 24 hours a day.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "Services", href: "/services" }]} />
       <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Visual

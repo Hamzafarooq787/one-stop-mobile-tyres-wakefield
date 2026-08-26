@@ -1,14 +1,20 @@
-import type { Metadata } from "next";
 import Visual from "@/components/Visual";
 import Icon from "@/components/Icon";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Coverage Areas | One Stop Mobile Tyre Wakefield",
-};
+export const metadata = pageMetadata({
+  title: "Coverage Areas | Mobile Tyre Fitting Wakefield",
+  description:
+    "We cover Wakefield, Leeds, Bradford, Huddersfield, Halifax, Pontefract, Castleford, Normanton and Ossett with 30-60 minute mobile tyre callouts.",
+  path: "/coverage-areas",
+});
 
 export default function CoverageAreasPage() {
   return (
-    <main className="pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1536px] mx-auto space-y-xl">
+    <>
+      <Breadcrumbs items={[{ label: "Coverage Areas", href: "/coverage-areas" }]} />
+      <main className="pt-2 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1536px] mx-auto space-y-xl">
       {/* Hero + Map */}
       <section className="relative rounded-xl overflow-hidden glass-panel border border-border-subtle mt-md">
         <div className="absolute inset-0 z-0">
@@ -114,6 +120,7 @@ export default function CoverageAreasPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 

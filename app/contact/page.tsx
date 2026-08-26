@@ -1,15 +1,21 @@
-import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import Visual from "@/components/Visual";
 import Icon from "@/components/Icon";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact Us | One Stop Mobile Tyre Wakefield",
-};
+  description:
+    "Need a tyre fitted fast? Call, WhatsApp or fill in our form to book a mobile tyre fitting callout anywhere in Wakefield, 24 hours a day.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
-    <main className="pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1536px] w-full mx-auto relative">
+    <>
+      <Breadcrumbs items={[{ label: "Contact", href: "/contact" }]} />
+      <main className="pt-2 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1536px] w-full mx-auto relative">
       {/* Atmospheric glow */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-primary rounded-full mix-blend-screen filter blur-[150px] opacity-10" />
@@ -128,5 +134,6 @@ export default function ContactPage() {
         </div>
       </div>
     </main>
+    </>
   );
 }

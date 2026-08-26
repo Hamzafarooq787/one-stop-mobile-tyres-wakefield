@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
+import { pageMetadata, siteUrl } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,37 +18,63 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
-const siteUrl = "https://onestopmobiletyrewakefield.co.uk";
-const title = "One Stop Mobile Tyre Wakefield | 24/7 Mobile Tyre Fitting";
-const description =
-  "On-demand 24/7 mobile tyre fitting across Wakefield. Fast response, professional service, right to your location.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    url: siteUrl,
-    siteName: "One Stop Mobile Tyre Wakefield",
-    images: [
-      {
-        url: "/images/og-image.webp",
-        width: 1200,
-        height: 630,
-        alt: "One Stop Mobile Tyre Wakefield — 24/7 Mobile Tyre Fitting",
-      },
+  ...pageMetadata({
+    title: "One Stop Mobile Tyre Wakefield | 24/7 Mobile Tyre Fitting",
+    description:
+      "24/7 mobile tyre fitting across Wakefield & West Yorkshire. Emergency callouts, puncture repairs and new tyres fitted at your home, work or roadside.",
+    path: "/",
+  }),
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  name: "One Stop Mobile Tyre Wakefield",
+  image: `${siteUrl}/images/hero-van.webp`,
+  logo: `${siteUrl}/images/logo-icon-only.webp`,
+  url: siteUrl,
+  telephone: "+441924123456",
+  email: "onestoptyreswakefield@gmail.com",
+  priceRange: "£££",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Wakefield",
+    addressRegion: "West Yorkshire",
+    addressCountry: "GB",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 53.6833,
+    longitude: -1.4977,
+  },
+  areaServed: [
+    "Wakefield",
+    "Leeds",
+    "Bradford",
+    "Huddersfield",
+    "Halifax",
+    "Pontefract",
+    "Castleford",
+    "Normanton",
+    "Ossett",
+  ],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
     ],
-    locale: "en_GB",
-    type: "website",
+    opens: "00:00",
+    closes: "23:59",
   },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: ["/images/og-image.webp"],
-  },
+  sameAs: [],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -57,6 +84,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`dark ${inter.variable} ${spaceGrotesk.variable} scroll-smooth h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body overflow-x-hidden selection:bg-primary-container selection:text-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <Header />
         <main className="flex-grow pt-[72px]">{children}</main>
         <Footer />
