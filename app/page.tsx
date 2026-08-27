@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 const services = [
   {
-    title: "Emergency Fitting",
+    title: "Mobile Tyre Emergency Fitting",
     desc: "Stuck on the roadside? Our rapid response team will get you back on the road safely and quickly.",
     icon: "emergency_share",
     img: "/images/service-emergency-fitting.webp",
@@ -17,37 +17,37 @@ const services = [
     img: "/images/service-mobile-tyre.webp",
   },
   {
-    title: "Tyre Replacement",
+    title: "Mobile Tyre Replacement",
     desc: "Premium, mid-range, and budget tyres available for all vehicle makes and models.",
     icon: "tire_repair",
     img: "/images/service-tyre-replacement.webp",
   },
   {
-    title: "Locking Wheel Nut Removal",
+    title: "Mobile Tyre Locking Wheel Nut Removal",
     desc: "Lost your key? We use specialized equipment to remove locking nuts without damaging your alloys.",
     icon: "lock_open",
     img: "/images/service-locking-wheel-nut.webp",
   },
   {
-    title: "Puncture Repair",
+    title: "Mobile Tyre Puncture Repair",
     desc: "Professional BSA-approved puncture repairs to extend the life of your existing tyres.",
     icon: "build",
     img: "/images/service-puncture-repair.webp",
   },
   {
-    title: "Tyre Change",
+    title: "Mobile Tyre Change",
     desc: "Seasonal tyre swaps or fitting tyres you've purchased elsewhere.",
     icon: "sync_alt",
     img: "/images/service-tyre-change.webp",
   },
   {
-    title: "Tyre Repair",
+    title: "Mobile Tyre Repair",
     desc: "Comprehensive inspection and repair of minor tyre damage to keep you safe.",
     icon: "handyman",
     img: "/images/service-tyre-repair.webp",
   },
   {
-    title: "New Tyre Installation",
+    title: "Mobile New Tyre Installation",
     desc: "Precision fitting, computerized balancing, and new valves included as standard.",
     icon: "settings_suggest",
     img: "/images/service-new-installation.webp",
