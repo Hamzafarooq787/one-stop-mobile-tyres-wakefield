@@ -57,7 +57,7 @@ export default function ServicesPage() {
             <div className="p-md flex-grow flex flex-col justify-between">
               <div>
                 <h2 className="font-headline text-headline-md text-on-surface mb-sm">
-                  Emergency Fitting
+                  Mobile Tyre Emergency Fitting
                 </h2>
                 <p className="text-on-surface-variant mb-md">
                   Rapid response for unexpected blowouts or severe tyre
@@ -80,14 +80,14 @@ export default function ServicesPage() {
 
           <ServiceCard
             icon="local_shipping"
-            title="Mobile Service"
+            title="Mobile Tyre Service"
             desc="Complete workshop capabilities delivered directly to your home or workplace."
             price="From £45.00"
             img="/images/service-mobile-tyre.webp"
           />
           <ServiceCard
             icon="tire_repair"
-            title="Replacement"
+            title="Mobile Tyre Replacement"
             desc="Premium and budget options expertly mounted and balanced."
             price="Quote on Request"
             img="/images/service-tyre-replacement.webp"
@@ -106,7 +106,7 @@ export default function ServicesPage() {
             </div>
             <div className="p-md w-2/3 flex flex-col justify-center">
               <h3 className="font-headline text-headline-md text-on-surface mb-sm">
-                Locking Wheel Nut Removal
+                Mobile Tyre Locking Wheel Nut Removal
               </h3>
               <p className="text-on-surface-variant mb-md">
                 Lost your key? Our specialized invasive and non-invasive
@@ -119,28 +119,28 @@ export default function ServicesPage() {
 
           <ServiceCard
             icon="build"
-            title="Puncture Repair"
+            title="Mobile Tyre Puncture Repair"
             desc="BSAU159 approved plug and patch repairs for tread punctures."
             price="From £35.00"
             img="/images/service-puncture-repair.webp"
           />
           <ServiceCard
             icon="sync_alt"
-            title="Tyre Change"
+            title="Mobile Tyre Change"
             desc="Seasonal swaps or switching out damaged wheels safely."
             price="From £40.00"
             img="/images/service-tyre-change.webp"
           />
           <ServiceCard
             icon="handyman"
-            title="Tyre Repair"
+            title="Mobile Tyre Repair"
             desc="Advanced diagnostics and safe sealing of minor leaks and valve issues."
             price="From £30.00"
             img="/images/service-tyre-repair.webp"
           />
           <ServiceCard
             icon="settings_suggest"
-            title="New Installation"
+            title="Mobile New Tyre Installation"
             desc="Precision fitting of fresh rubber with digital balancing."
             price="Quote on Request"
             img="/images/service-new-installation.webp"
