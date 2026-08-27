@@ -37,6 +37,7 @@ import {
   Route,
   Gauge,
   Network,
+  AlertTriangle,
   type LucideIcon,
 } from "lucide-react";
 
@@ -80,6 +81,7 @@ const icons: Record<string, LucideIcon> = {
   route: Route,
   speed: Gauge,
   hub: Network,
+  warning: AlertTriangle,
 };
 
 export default function Icon({
