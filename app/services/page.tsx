@@ -69,6 +69,13 @@ const serviceList = [
     img: "/images/service-new-installation.webp",
     tags: ["Digital Balancing", "New Valves"],
   },
+  {
+    icon: "warning",
+    title: "Emergency Flat Tyre Repair",
+    desc: "Sudden flat on the road? We repair or replace it on the spot so you can get moving again.",
+    img: "/images/gallery-puncture-patching.webp",
+    tags: ["Roadside", "Same Day"],
+  },
 ];
 
 const differenceItems = [
