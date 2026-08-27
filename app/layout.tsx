@@ -37,7 +37,6 @@ const localBusinessSchema = {
   url: siteUrl,
   telephone: "+441924123456",
   email: "onestoptyreswakefield@gmail.com",
-  priceRange: "£££",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Wakefield",
