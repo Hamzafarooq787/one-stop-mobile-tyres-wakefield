@@ -52,6 +52,12 @@ const services = [
     icon: "settings_suggest",
     img: "/images/service-new-installation.webp",
   },
+  {
+    title: "Emergency Flat Tyre Repair",
+    desc: "Sudden flat on the road? We repair or replace it on the spot so you can get moving again.",
+    icon: "warning",
+    img: "/images/gallery-puncture-patching.webp",
+  },
 ];
 
 const whyChooseUs = [
