@@ -17,7 +17,6 @@ const serviceList = [
     icon: "emergency_share",
     title: "Mobile Tyre Emergency Fitting",
     desc: "Rapid response for unexpected blowouts or severe tyre damage, wherever you are.",
-    price: "From £80.00",
     img: "/images/service-emergency-fitting.webp",
     tags: ["24/7", "Rapid Response"],
   },
@@ -25,7 +24,6 @@ const serviceList = [
     icon: "local_shipping",
     title: "Mobile Tyre Service",
     desc: "Complete workshop capabilities delivered directly to your home or workplace.",
-    price: "From £45.00",
     img: "/images/service-mobile-tyre.webp",
     tags: ["At Your Door", "Full Workshop"],
   },
@@ -33,7 +31,6 @@ const serviceList = [
     icon: "tire_repair",
     title: "Mobile Tyre Replacement",
     desc: "Premium and budget tyre options, expertly mounted and balanced on-site.",
-    price: "Quote on Request",
     img: "/images/service-tyre-replacement.webp",
     tags: ["All Brands", "All Budgets"],
   },
@@ -41,7 +38,6 @@ const serviceList = [
     icon: "lock_open",
     title: "Mobile Tyre Locking Wheel Nut Removal",
     desc: "Specialised extraction tools safely remove stubborn or damaged locking nuts.",
-    price: "From £55.00",
     img: "/images/service-locking-wheel-nut.webp",
     tags: ["Specialist Tools", "No Damage"],
   },
@@ -49,7 +45,6 @@ const serviceList = [
     icon: "build",
     title: "Mobile Tyre Puncture Repair",
     desc: "BSAU159 approved plug and patch repairs for tread punctures.",
-    price: "From £35.00",
     img: "/images/service-puncture-repair.webp",
     tags: ["BSA Approved", "Same Day"],
   },
@@ -57,7 +52,6 @@ const serviceList = [
     icon: "sync_alt",
     title: "Mobile Tyre Change",
     desc: "Seasonal swaps or switching out damaged wheels, safely and quickly.",
-    price: "From £40.00",
     img: "/images/service-tyre-change.webp",
     tags: ["Seasonal", "Any Vehicle"],
   },
@@ -65,7 +59,6 @@ const serviceList = [
     icon: "handyman",
     title: "Mobile Tyre Repair",
     desc: "Advanced diagnostics and safe sealing of minor leaks and valve issues.",
-    price: "From £30.00",
     img: "/images/service-tyre-repair.webp",
     tags: ["Safety Check", "Minor Damage"],
   },
@@ -73,7 +66,6 @@ const serviceList = [
     icon: "settings_suggest",
     title: "Mobile New Tyre Installation",
     desc: "Precision fitting of fresh rubber with digital balancing and new valves.",
-    price: "Quote on Request",
     img: "/images/service-new-installation.webp",
     tags: ["Digital Balancing", "New Valves"],
   },
@@ -222,7 +214,7 @@ export default function ServicesPage() {
                 <p className="text-on-surface-variant text-sm mb-md flex-grow">
                   {s.desc}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-sm">
+                <div className="flex flex-wrap gap-2">
                   {s.tags.map((t) => (
                     <span
                       key={t}
@@ -232,7 +224,6 @@ export default function ServicesPage() {
                     </span>
                   ))}
                 </div>
-                <span className="text-label-sm text-primary">{s.price}</span>
               </div>
             </div>
           ))}
