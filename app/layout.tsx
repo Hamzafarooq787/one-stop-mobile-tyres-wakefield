@@ -35,7 +35,7 @@ const localBusinessSchema = {
   image: `${siteUrl}/images/hero-van.webp`,
   logo: `${siteUrl}/images/logo-icon-only.webp`,
   url: siteUrl,
-  telephone: "+441924123456",
+  telephone: "+447790714784",
   email: "onestoptyreswakefield@gmail.com",
   address: {
     "@type": "PostalAddress",

@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import Visual from "@/components/Visual";
 import Icon from "@/components/Icon";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { site } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -55,7 +56,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-sm relative z-10">
               <a
                 className="flex items-center gap-md p-sm rounded-lg hover:bg-surface-variant transition-colors group/link cursor-pointer"
-                href="tel:+447790714784"
+                href={site.phoneHref}
               >
                 <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover/link:bg-primary/20 transition-colors">
                   <Icon name="call" className="text-primary w-5 h-5" />
@@ -65,7 +66,7 @@ export default function ContactPage() {
                     Emergency Hotline
                   </p>
                   <p className="font-headline text-body-lg text-on-surface group-hover/link:text-primary transition-colors">
-                    +44 7790 714784
+                    {site.phone}
                   </p>
                 </div>
               </a>
